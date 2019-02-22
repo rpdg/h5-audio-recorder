@@ -28,6 +28,12 @@
     </div>
     <pre id="log"></pre>
 
+    <script>
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+            alert("can't use in wechat !");
+        }
+    </script>
 
     <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
     <script src="js/WebAudioRecorder.min.js"></script>
